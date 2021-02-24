@@ -3,13 +3,29 @@
 numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
 # 1. Print out a list of the even integers:
+print(" ")
+print("Task # 1")
 
+for number in numbers:
+    if number % 2 == 0:
+        print(number)
 
 # 2. Print the difference between the largest and smallest value:
+print(" ")
+print("Task # 2")
 
+diff = max(numbers) - min(numbers)
+print(diff)
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
+print(" ")
+print("Task # 3")
 
+for num in numbers:
+    if (numbers[num] == 2) and (numbers[num+1] == 2):
+        print("True")
+    else:
+        print("False")
 
 # 4. Print the sum of the numbers, 
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
